@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Imóvel Guide</title>
+    <script src="html2canvas.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<body>
+    <div class="barra-de-navegacao">
+        <img class="imgimovel" src="imovelguideimg.png" alt="Logo Imovel Guide">
+        <nav class="nav1">
+            <ul>Condomínios</ul>
+            <ul>Fórum</ul>
+            <ul>Guia</ul>
+            <ul>Amigos</ul>
+            <ul>Ferramentas</ul>
+        </nav>
+        <nav class="nav2">
+            <ul>Cotar Imóvel</ul>
+            <ul>Planos</ul>
+            <ul>Entrar</ul>
+            <ul><button class="cadastrese" id="cadastrese">CADASTRE-SE</button></ul>
+            </nav>
+            <img class="menu-burguer" src="menuburguer - Copia.png" alt="">
+            <nav class="navmobile">
+                <ul>Condomínios</ul>
+                <ul>Fórum</ul>
+                <ul>Guia</ul>
+                <ul>Amigos</ul>
+                <ul>Ferramentas</ul>
+                <ul>Cotar Imóvel</ul>
+                <ul>Planos</ul>
+                <ul>Entrar</ul>
+                <span id="fechar-menu">X</span>
+            </nav>
+            <div class="overlay"></div>
+
+        </div>
+        <div class="containers">
+            <div class="container1">
+            <div class="corretores">
+                <div class="corretora1">
+                <img class="corretoraimg" src="imgcorretor2.jpeg" alt="Foto Corretora">
+                <div class="corretorainfo">
+                <h2>Nome Corretora</h2>
+                <p>3.000 pontos</p>
+                <span class="ver-telefone" id="vertelefone11">ver telefone</span>
+            <div class="balao" id="balaotelefone1">
+                <p class="numero" id="telefonecorretor1">(99) 9999-9999</p>
+            </div>
+            </div>
+            </div>
+            <div class="corretor2div">
+                <img class="corretorimg" src="imgcorretor1.jpeg" alt="Foto Corretor">
+                <div class="corretor2info">
+                    <h2>Nome Corretor</h2>
+                    <p>3.000 pontos</p>
+                    <span class="ver-telefone" id="vertelefone2">ver telefone</span>
+                    <div class="balao" id="balaotelefone2">
+                    <p class="numero" id="telefonecorretor2">(99) 99999-9999</p>
+                    
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="mensagem">
+                <form>
+                    <h2>Mande uma mensagem:</h2>
+                    <div>
+                    <input type="text" id="cpf" maxlength="14" placeholder="Digite seu CPF">
+                    </div>
+                    <div>
+                    <input type="text" id="telefone" maxlength="15" placeholder="Digite seu telefone">
+                    </div>
+                    <div>
+                    <textarea id="assunto" maxlength="400" placeholder="Digite seu assunto"></textarea>
+                    </div>
+                    <div>
+                    <button type="button" id="enviar-mensagem">Enviar Mensagem</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="regrade3">
+                <h2>Regra de 3</h2>
+                <div class="calculadora">
+                    <div class="primeirosvalores">
+                   
+                    <input type="number" id="valor1" placeholder="1 valor">
+                    <div class="linha"></div>
+                    
+                    <input type="number" id="valor2"  placeholder="2 valor">
+                    </div>
+                    <div class="segundosvalores">
+                
+                    
+                    <input type="number" id="valor3"  placeholder="3 valor">
+                    <div class="linha"></div>
+                
+                <div class="resultado" id="resultado" ></div>
+                </div>
+                </div>
+                <button onclick="calcular()" id="calcular">Calcular</button>
+            </div>
+            </div>
+            <div class="container2">
+            <div class="modal1">
+                <img class="casaimg" src="casaimg.jpeg" alt="Casa">
+                <button class="botao-modal" id="btnAbrirModal">Abrir imagem no modal</button>
+            </div> 
+
+            <div id="modal" class="modal">
+                <span class="fechar">&times;</span>
+                <div class="janela-modal">
+                <img class="modal-imagem" src="casaimg.jpeg" alt="Imagem de Casa">
+              </div>
+              </div>
+            <div class="capture" id="capture">
+                <img class="casaimg" src="casaimg.jpeg" alt="Imagem de Casa">                
+                <p id="balaoimovelguide">Imovel Guide</p>
+                <button id="botao-download">Download</button>
+            </div>
+            <div  class="zoomout" id="zoom-out">
+                <img class="casaimg" id="img-zoom-out" src="casaimg.jpeg" alt="Imagem de Casa">
+            </div>
+            </div>
+    
+            
+        </div>
+
+        <footer class="footer">
+            <div class="footer-esquerda">
+            <ul>Termos</ul>
+            <ul>Contratos</ul>
+            <ul>Sobre</ul>
+            </div>
+            <div class="footer-direita">
+                <p> © Copyright 2022. Todos os direitos reservados.</p>
+                <img id="imgfooter" src="imovelguideimg.png" alt="">
+            </div>
+        </footer>
+
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+        </div>
+        
+
+        <script src="script.js"></script>
+
+</body>
+</html>

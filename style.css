@@ -1,0 +1,614 @@
+body {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.menu-burguer{
+    display: none;
+}
+
+.barra-de-navegacao{
+    position: relative;
+}
+
+.barra-de-navegacao, nav {
+    
+    display: flex;
+    width: 100%;
+    background-color: #1B2653;
+    color: white;
+    align-items: center;
+    font-size: 95%;
+    font-weight: 400;
+}
+
+.nav1 ul, .nav2 ul{
+    cursor: pointer;
+}
+
+.imgimovel {
+    
+    width: 7%;
+    height: auto;
+    padding-left: 2%;
+}
+
+.nav1 {
+
+    justify-content: start;
+}
+
+.nav2 {
+
+    justify-content: end;
+    padding-right: 2%;
+}
+
+.cadastrese {
+    justify-content: flex;
+    font-size: 95%;
+    color: white;
+    background-color: #1B2653;
+    border-color: white;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navmobile{
+    display: none;
+}
+
+.containers{
+    width: 100%;
+    height: 1000px;
+}
+
+
+
+.container1, .container2 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+
+.corretores, .mensagem, .regrade3{
+
+    padding: 10px
+
+}
+
+.corretores, .mensagem, .regrade3, .modal1, .capture, .zoomout {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid rgb(167, 163, 163);
+    border-radius: 5px;
+}
+
+.corretoraimg, .corretorimg {
+    margin-top: 5%;
+    width: 130px;
+    height: 130px;
+    border: 1px solid #787878;
+    border-radius: 5px;
+}
+
+.corretores h2 {
+    font-size: 15px;
+    margin: 0;
+    color: #1B2653;
+}
+
+.corretores p {
+    font-size: 13px;
+    line-height: 0;
+}
+
+.corretorainfo, .corretor2info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    line-height: 0.5;
+}
+
+.corretora1, .corretor2div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.balao {
+    display: flex;
+    position: absolute;
+    margin-top: 50px;
+    background-color: #fe6613;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.5s ease; /* Transição suave da opacidade */
+    width: 115px;
+    height: 25px;
+    text-decoration: underline #fff;
+}
+
+.balao.mostrar {
+    opacity: 1; /* Torna visível com a transição suave */
+}
+
+
+
+.ver-telefone {
+    text-decoration: underline;
+    color: #fe6613;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.numero {
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.mensagem, .mensagem h2 {
+    margin: 0;
+    font-weight: 500;
+    color: #1B2653;
+}
+
+#cpf, #telefone {
+
+    width: 50%;
+    border: 1px solid #bbbaba;
+    border-radius: 5px;
+    color: black;
+    padding: 8px;
+    margin-top: 5%;
+}
+#assunto{
+
+    width: 200px;
+    height: 100px; 
+    overflow-wrap: break-word;
+    color: black;
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#assunto {
+
+    width: 
+    90%;
+    height: 60px;
+    border: 1px solid #bbbaba;
+    border-radius: 5px;
+    color: #bbbaba;
+    padding: 3px;
+    margin-top: 5%;
+}
+
+#enviar-mensagem {
+    width: 65%;
+    margin-top: 5%;
+    display: block;
+    background-color: #fe6613;
+    color: white;
+    padding: 5px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.alerta-sucesso {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Ajustei a duração da transição */
+    z-index: 100;
+}
+
+.mostrar {
+    opacity: 1;
+}
+
+.regrade3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.regrade3 h2{
+    color: #1B2653;
+    font-weight: 600;
+    margin: 0;
+}
+
+.calculadora{
+    display: flex;
+    flex-direction:column;
+    align-self: center;
+}
+.primeirosvalores, .segundosvalores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 6%;
+}
+
+
+.resultado, #valor1, #valor2, #valor3 {
+
+    word-wrap: break-word;
+    width: 35%;
+    height: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+#valor1, #valor2, #valor3{
+    border: 1px solid #bbbaba;
+
+}
+.resultado{
+    border: 1px solid #fe6613
+}
+
+.linha{
+    width: 12%;
+    height: 1px;
+    background-color: black;
+    align-self: center;
+}
+
+
+
+#calcular{
+    width: 35%;
+    height: 9%;
+    background-color: #fe6613;
+    color: white;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+.casaimg{
+    width: 100%;
+    height: 100%;
+
+}
+
+#balaoimovelguide{
+
+    position:absolute;
+    padding: 10px;
+    background-color: #fe6613;
+    color: white;
+    border: none;
+    border-radius:  5px 5px 5px 5px;
+    text-align: center;
+    opacity: 80%;
+    width: 70%;
+    top: 70%;
+    left: 11%;
+
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escurecido com opacidade */
+}
+
+
+
+.modal-imagem {
+    
+    position: relative;
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    border-style: solid 25px;
+    border-color: #ccc;
+}
+
+.janela-modal{
+
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 17%;
+    display: flex;
+    flex-direction: column;
+    border-radius:  10px 10px 10px 10px;
+    width: 65%;
+    height: 550px;
+    background-color: white;
+
+}
+
+.fechar {
+    position: relative;
+    left: 80%;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 2; /* Para garantir que o botão de fechar esteja sempre visível */
+}
+
+.fechar:hover {
+
+    color: #ccc;
+}
+
+.botao-modal{
+
+    background-color:#fe6613;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    width: 100%;
+    height: 11%;
+    text-transform: uppercase;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+
+.fechar {
+
+    color: #fe6613;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 2; /* Para garantir que o botão de fechar esteja sempre visível */
+}
+
+.fechar:hover {
+
+    color: #ccc;
+}
+
+#botao-download{
+
+    background-color:#fe6613;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    width: 60%;
+    height: 11%;
+    margin-left: 20%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+
+.zoomout{
+    overflow: hidden;
+}
+
+#img-zoom-out {
+
+    transform: scale(3.0);
+    transition: transform 1s ease-in-out;
+  }
+  
+  #img-zoom-out:hover {
+
+    transform: scale(1.0);
+  }
+  
+  .capture{
+    position: relative;
+  }
+
+ .footer{
+
+    position: relative;
+    display: flex;
+    align-content: center;
+    width: 100%;
+    height: 70px;
+    background-color: #1B2653;
+    color: white ;
+
+ }
+
+ .footer-esquerda, .footer-direita{
+
+    position: absolute;
+    display: flex;
+    font-size: 95%;
+    font-weight: 400;
+    padding: 10px;
+ }
+
+ .footer-direita{
+
+    justify-content: end;
+    gap: 15px;
+ }
+
+
+ #imgfooter{
+    width: 7%;
+    height: auto;
+    padding-right: 2%;
+ }
+
+.footer-esquerda ul{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .containers{
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    .container1, .container2{
+        margin-left: 20px;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap:0;
+    }
+
+    .barra-de-navegacao{
+        width: 100%;
+        height: 100px;
+    }
+
+    .imgimovel{
+        width: 30%;
+    }
+    
+    .nav1, .nav2, nav{
+        display: none;
+        
+    }
+    
+    .corretores, .mensagem, .regrade3, .modal1, .capture, .zoomout {
+
+        align-self: center;
+        justify-self: center;
+        margin-top: 15%;
+    }
+    
+    .navmobile {
+
+        height: 100vh;
+        background-color:#1B2653;
+        padding-top: 50px;
+        text-align: center;
+        overflow-y: auto;
+        z-index: 1000;
+    }
+    
+    .nav2 {
+        position: relative; /* Ajusta a posição relativa para a nav2 */
+    }
+    
+    .menu-burguer{
+
+
+        display:block;
+        margin-left: 45%;
+        width: 50px;
+
+        
+        
+    }
+    .navmobile {
+
+        font-size: 100%;
+        display: none;
+        position: absolute;
+        top: 70%;
+        right: 0;
+        width: 40%;
+        height: 200px;
+        background-color: #333;;
+        text-align: center;
+        overflow-y: auto;
+        z-index: 1000;
+        margin: 0;
+    }
+
+    .navmobile ul{
+
+        padding: 0;
+        margin: 0;
+        margin-top: 2px;
+
+    }
+
+    #fechar-menu{
+        position: absolute;
+        top: 5%;
+        right: 10%;
+        color: #fe6613;
+    }
+    
+    .navmobile.active {
+        display: block;
+    }
+
+    .footer-esquerda{
+        display: none;
+    }
+
+    .footer {
+        position: absolute;
+        top: 2950px;
+        height: 40%;
+
+    }
+    
+    .footer-direita, #imgfooter{
+        
+        justify-self: center;
+        align-self: cen;
+        text-align: center;
+        font-size: 100%;
+        right: 13%
+    }
+    
+    #imgfooter{
+        width: 20%;
+    }
+
+    .fechar{
+        left: 75%;
+        font-size: 55%;
+
+    }
+
+    .janela-modal{
+        height: 70%;
+    }
+
+
+    }
+    
+
+ 
